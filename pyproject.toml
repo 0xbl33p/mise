@@ -1,0 +1,38 @@
+[project]
+name = "mise"
+version = "0.0.1"
+description = "An agentic kitchen copilot — LLM-driven cooking guidance and stove safety"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.7",
+    "typer>=0.12",
+    "rich>=13.7",
+    "openai>=1.50",
+    "python-dotenv>=1.0",
+    "pillow>=10.0",
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.27",
+    "cryptography>=42.0",
+]
+
+[project.optional-dependencies]
+audio = [
+    "pyttsx3>=2.90",
+    "sounddevice>=0.4.6",
+    "faster-whisper>=1.0",
+    "numpy>=1.26",
+]
+
+[project.scripts]
+mise = "mise.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mise"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+.env.local
+dist/
+build/
+.ruff_cache/
+.pytest_cache/
+.mise_state/
+
+# markdown (keep all docs + notes out of the public repo)
+*.md
+
+# node / next (website)
+node_modules/
+.next/
+out/

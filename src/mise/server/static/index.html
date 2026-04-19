@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mise</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">mise</div>
+    <div class="status">
+      <span id="conn-dot" class="dot"></span>
+      <span id="conn-text">disconnected</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="camera">
+      <video id="cam" autoplay playsinline muted></video>
+      <canvas id="capture" hidden></canvas>
+      <div class="overlay">
+        <div class="burner-dial">
+          <div class="dial-label">burner</div>
+          <div class="dial-value"><span id="burner-watts">0</span>W</div>
+          <div class="dial-bar"><div id="burner-bar"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="plan" id="plan-card" hidden>
+      <div class="plan-title"><span id="plan-dish">—</span></div>
+      <div class="plan-step">
+        <span class="step-idx" id="plan-idx">—</span>
+        <span class="step-desc" id="plan-desc">—</span>
+      </div>
+    </section>
+
+    <section class="transcript" id="transcript"></section>
+
+    <section class="composer">
+      <button id="mic-btn" class="mic" aria-pressed="false">
+        <span class="mic-label">hold to talk</span>
+      </button>
+      <form id="text-form" class="text-form">
+        <input id="text-input" type="text" placeholder="type to Mise..." autocomplete="off" />
+        <button type="submit">send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

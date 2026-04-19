@@ -10,8 +10,9 @@ build/
 .pytest_cache/
 .mise_state/
 
-# markdown (keep all docs + notes out of the public repo)
+# markdown (keep all docs + notes out of the public repo, except README)
 *.md
+!README.md
 
 # node / next (website)
 node_modules/

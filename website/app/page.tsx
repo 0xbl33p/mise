@@ -74,7 +74,7 @@ function Nav() {
 function Hero() {
   return (
     <section className="container flex flex-col items-center text-center pt-16 pb-24 sm:pt-24 sm:pb-32">
-      <div className="relative flex items-center justify-center mb-8">
+      <div className="relative flex items-center justify-center mb-2">
         <div className="absolute inset-0 bg-mint/20 blur-3xl rounded-full scale-150" aria-hidden />
         <Image
           src="/mise-logo.png"
@@ -86,11 +86,16 @@ function Hero() {
         />
       </div>
 
-      <Badge variant="mint" className="mb-4">open source · self-hosted · Claude-powered</Badge>
-
-      <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-balance max-w-3xl">
-        The agentic kitchen copilot
+      <h1
+        className="text-7xl sm:text-8xl md:text-9xl font-black tracking-tight leading-[1.3] pb-6 mb-4 overflow-visible bg-gradient-to-b from-white via-mint to-mint/70 bg-clip-text text-transparent"
+        style={{ textShadow: "0 0 40px rgba(74, 222, 128, 0.4)" }}
+      >
+        mise
       </h1>
+
+      <p className="text-3xl sm:text-5xl font-bold tracking-tight text-balance max-w-3xl">
+        The agentic kitchen copilot
+      </p>
       <p className="mt-5 text-lg sm:text-xl text-muted-foreground max-w-2xl text-balance">
         Mise watches your stove through any camera, remembers what you cook, and cuts the
         power if you walk away. Runs on your laptop. Your kitchen, your data.

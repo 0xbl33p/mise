@@ -1,8 +1,17 @@
-# mise
+<p align="center">
+  <img src="assets/logo.png" alt="Mise" width="200">
+</p>
 
-An agentic kitchen copilot. Watches your stove through any camera, remembers what you cook, and cuts the power when oil smokes.
+<h1 align="center">mise</h1>
 
-Runs on your laptop. Uses your own OpenRouter key. Your kitchen, your data.
+<p align="center">
+  An agentic kitchen copilot. Watches your stove through any camera, remembers what you cook,<br/>
+  and cuts the power when oil smokes.
+</p>
+
+<p align="center">
+  Runs on your laptop. Uses your own OpenRouter key. Your kitchen, your data.
+</p>
 
 ---
 
